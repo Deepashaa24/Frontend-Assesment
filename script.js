@@ -111,4 +111,14 @@ function displayProducts() {
     productsGrid.innerHTML = clutter;
 
 }
+
+
+function scrollToProducts(){
+
+    document.querySelector("#products")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
 displayProducts();

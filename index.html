@@ -11,6 +11,7 @@
     >
 
     <title>Frontend Assessment</title>
+
     <link rel="stylesheet" href="style.css">
     <link
         rel="stylesheet"
@@ -21,12 +22,12 @@
 
 <body>
 
+
 <section class="hero">
 
     <div class="swiper mySwiper">
 
         <div class="swiper-wrapper">
-
 
             <div class="swiper-slide">
 
@@ -35,6 +36,7 @@
                     <h1>1920 x 1080</h1>
 
                 </div>
+
                 <div class="banner-content">
 
                     <h6>Eyebrow</h6>
@@ -48,7 +50,50 @@
 
                     <div class="buttons">
 
-                        <button type="button">
+                        <button
+                            type="button"
+                            onclick="scrollToProducts()"
+                        >
+                            Shop Now
+                        </button>
+
+                        <button
+                            type="button"
+                            class="secondary"
+                        >
+                            Discover All
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="banner-image">
+
+                    <h1>Frontend UI</h1>
+
+                </div>
+
+
+                <div class="banner-content">
+
+                    <h6>Design</h6>
+
+                    <h1>Creative Layouts</h1>
+
+                    <p>
+                        Responsive layouts for desktop, tablet and mobile devices.
+                    </p>
+
+                    <div class="buttons">
+
+                        <button
+                            type="button"
+                            onclick="scrollToProducts()"
+                        >
                             Shop Now
                         </button>
 
@@ -65,42 +110,6 @@
 
             </div>
 
-            <div class="swiper-slide">
-
-                <div class="banner-image">
-
-                    <h1>Frontend UI</h1>
-
-                </div>
-
-                <div class="banner-content">
-
-                    <h6>Design</h6>
-
-                    <h1>Creative Layouts</h1>
-
-                    <p>
-                        Responsive layouts for desktop, tablet and mobile devices.
-                    </p>
-
-                    <div class="buttons">
-
-                        <button type="button">
-                            Shop Now 
-                        </button>
-
-                        <button
-                            type="button"
-                            class="secondary"
-                        >
-                            Discover all
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
 
             <div class="swiper-slide">
 
@@ -109,6 +118,7 @@
                     <h1>JavaScript</h1>
 
                 </div>
+
 
                 <div class="banner-content">
 
@@ -122,7 +132,10 @@
 
                     <div class="buttons">
 
-                        <button type="button">
+                        <button
+                            type="button"
+                            onclick="scrollToProducts()"
+                        >
                             Shop Now
                         </button>
 
@@ -130,7 +143,7 @@
                             type="button"
                             class="secondary"
                         >
-                           Discover All
+                            Discover All
                         </button>
 
                     </div>
@@ -141,7 +154,13 @@
 
         </div>
 
+
+        <!-- PAGINATION -->
+
         <div class="swiper-pagination"></div>
+
+
+        <!-- NAVIGATION -->
 
         <div class="swiper-button-next"></div>
 
@@ -151,13 +170,18 @@
 
 </section>
 
-<section class="featured-products">
+<section
+    class="featured-products"
+    id="products"
+>
 
     <div class="section-title">
 
         <h2>Our Products</h2>
 
     </div>
+
+
     <div class="products-grid">
 
 
@@ -166,6 +190,9 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
 <script src="script.js"></script>
 
 
